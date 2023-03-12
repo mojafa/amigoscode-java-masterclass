@@ -17,4 +17,4 @@ public class EmailExtractorReport extends ExtractorReport {
         return input.toLowerCase();
     }
 }
-}
+
