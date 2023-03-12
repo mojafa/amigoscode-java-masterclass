@@ -1,5 +1,11 @@
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static void main(String[] args) throws Exception{
+
+        String path = "src/data.txt";
+        new NumberExtractorReport().prepareAndSendReport(path);
+
+        new EmailExtractorReport().prepareAndSendReport(path);
+
+
     }
 }
