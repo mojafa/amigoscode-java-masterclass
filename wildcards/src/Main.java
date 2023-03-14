@@ -14,6 +14,10 @@ public class Main {
         //upper bounded wildcard
         // here we can work with number Integer
         print2(list2);
+        //print2(list1); //error
+        //lower bounded wildcard
+        // here we can work with number Integer
+        print3(list2);
     }
 
     //unbounded wildcard ?
@@ -24,10 +28,16 @@ public class Main {
                     System.out.println(e);
 
                 });
-    } 
+    }
 
     //upper bounded wildcard
     static void print2 (List<? extends Number> list){
+        list.forEach(System.out::println);
+    }
+
+
+    //lower bounded wildcard
+    static void print3 (List<? super Number> list){
         list.forEach(System.out::println);
     }
 }
